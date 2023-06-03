@@ -1,3 +1,92 @@
-.register{
-    
+.register {
+  height: 100vh;
+  background-color: #8294c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 900px) {
+    height: 100vh;
+  }
+  .card {
+    max-width: 60rem;
+    width: 60rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+    height: auto;
+    min-height: 35rem;
+    overflow: hidden;
+    @media screen and (max-width: 739px) {
+      width: 90%;
+      height: auto;
+      flex-direction: column;
+    }
+
+    .left {
+      flex: 1;
+      background: linear-gradient(
+          rgba(130, 148, 196, 0.5),
+          rgba(130, 148, 196, 0.5)
+        ),
+        url("https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80")
+          center;
+      background-size: cover;
+      padding: 3.125rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      color: white;
+      h1 {
+        margin: 0;
+        font-size: 4rem;
+        line-height: 100px;
+      }
+      p {
+      }
+      span {
+        font-size: 0.875rem;
+      }
+      button {
+        width: 50%;
+        background-color: white;
+        border: none;
+        padding: 0.625rem;
+        color: #8294c4;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+    .right {
+      flex: 1;
+      padding: 3.125rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 3.125rem;
+      h1 {
+        color: #555;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem;
+        input {
+          border: none;
+          border-bottom: 1px solid lightgray;
+          padding: 1.25rem 0.625rem;
+          outline: none;
+        }
+        button {
+          width: 50%;
+          padding: 0.625rem;
+          background-color: #8294c4;
+          border: none;
+          color: white;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }

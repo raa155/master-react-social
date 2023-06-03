@@ -1,0 +1,58 @@
+.navbar{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding:0.625rem 1.25rem;
+   height:3.125rem;
+   border-bottom: 1px solid lightgrey;
+   position: sticky;
+   background-color: white;
+   top:0;
+   .left{
+      display: flex;
+      align-items: center;
+      gap:1.875rem;
+      cursor: pointer;
+      span{
+         font-weight: bold;
+         font-size: 1.25rem;
+         color:darkblue;
+
+      }
+      .search{
+         display: flex;
+         align-items: center;
+         gap:0.625rem;
+         border:1px solid lightgrey;
+         border-radius: 0.3125rem;
+         padding:0.3125rem;
+         input{
+            border:none;
+            outline: none;
+            width:31.25rem;
+
+         }
+      }
+   }
+
+   .right{
+      display: flex;
+      align-items: center;
+      gap:1.25rem;
+      .user{
+         display: flex;
+         align-items: center;
+         gap: 0.625rem;
+         cursor: pointer;
+         img{
+            width:1.875rem;
+            height:1.875rem;
+            border-radius: 50%;
+            object-fit: cover;
+         }
+         span{
+            font-weight: 500;
+         }
+      }
+   }
+}

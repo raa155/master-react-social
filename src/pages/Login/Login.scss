@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
      @media screen and (max-width:900px){
-            height:auto;
+            height:100vh;
         }
     .card{
         max-width:60rem;
@@ -16,11 +16,11 @@
         height:auto;
         min-height:35rem;
         overflow: hidden;
-        @media screen and (max-width:900px){
-            width: 80%;
+        @media screen and (max-width:739px){
+            width: 90%;
             height:auto;
             flex-direction: column;
-            
+
         }
 
         .left{

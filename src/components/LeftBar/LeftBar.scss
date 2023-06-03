@@ -1,0 +1,62 @@
+.leftBar{
+   flex:2;
+   position:sticky;
+   top:4.375rem;
+   height:calc(100vh - 4.375rem);
+   overflow: scroll;
+
+   &::-webkit-scrollbar{
+      display: none;
+   }
+   .container{
+      padding:1.25rem;
+
+      hr{
+         margin:1.25rem 0;
+         border:none;
+         height:0.03125rem;
+         background-color: lightgrey;
+      }
+      .menu{
+         display: flex;
+         flex-direction: column;
+         gap:1.25rem;
+
+         span{
+            font-size: 0.75rem;
+         }
+         .user{
+            display: flex;
+            align-items: center;
+            gap:0.625rem;
+            cursor: pointer;
+
+            img{
+               width:1.875rem;
+               height:1.875rem;
+               border-radius: 50%;
+               object-fit: cover;
+            }
+
+            span{
+               font-size: 0.875rem;
+            }
+
+         }
+         .item{
+            display: flex;
+            align-items: center;
+            gap:0.625rem;
+            cursor: pointer;
+
+            img{
+               width:1.875rem;
+            }
+
+            span{
+               font-size: 0.875rem;
+            }
+         }
+      }
+   }
+}
